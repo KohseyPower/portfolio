@@ -3,10 +3,9 @@ import * as Styled from "./Projects.styled";
 export default function Projects() {
   return (
     <Styled.Section>
-      <Styled.Title>Mes projets</Styled.Title>
+      <Styled.Title>My Projects</Styled.Title>
       <Styled.Description>
-        Une selection de projets que j&apos;ai construits, avec un focus sur
-        l&apos;experience utilisateur et la qualite du code.
+        A selection of projects I&apos;ve built.
       </Styled.Description>
       <Styled.ProjectsGrid>
         <Styled.ProjectCard>
@@ -15,7 +14,7 @@ export default function Projects() {
             target="_blank"
             rel="noreferrer"
           >
-            <Styled.ProjectLabel>App Sort (React)</Styled.ProjectLabel>
+            <Styled.ProjectLabel>Sort</Styled.ProjectLabel>
             <Styled.Arrow>→</Styled.Arrow>
           </Styled.ProjectLink>
         </Styled.ProjectCard>
