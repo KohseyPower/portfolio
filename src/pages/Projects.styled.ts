@@ -36,7 +36,7 @@ export const ProjectsGrid = styled.ul`
   gap: 14px;
 `;
 
-export const ProjectLink = styled.a`
+export const ProjectLink = styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -81,6 +81,29 @@ export const ProjectLink = styled.a`
   }
 `;
 
+export const ProjectMainLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+  color: var(--text-h);
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+`;
+
+export const ProjectRight = styled.div`
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+`;
+
 export const ProjectCard = styled.li`
   border-radius: 18px;
 
@@ -101,12 +124,47 @@ export const ProjectCard = styled.li`
   }
 `;
 
-export const ProjectLabel = styled.span`
-  font-weight: 600;
+export const GithubButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.42),
+    rgba(255, 255, 255, 0.14)
+  );
+  color: var(--text-h);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 22px -20px rgba(15, 23, 42, 0.9);
+    border-color: rgba(255, 255, 255, 0.74);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border-color: rgba(255, 255, 255, 0.24);
+    background: linear-gradient(
+      125deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.06)
+    );
+  }
 `;
 
-export const Arrow = styled.span`
-  font-size: 1.35rem;
-  line-height: 1;
-  opacity: 0.65;
+export const GithubIcon = styled.svg`
+  width: 18px;
+  height: 18px;
+`;
+
+export const ProjectLabel = styled.span`
+  font-weight: 600;
 `;
