@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projets" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Styled.AppContent>
     </Styled.AppShell>
