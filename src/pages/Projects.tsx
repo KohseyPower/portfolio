@@ -43,7 +43,7 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
             >
-              <Styled.ProjectLabel>The Excellent Company</Styled.ProjectLabel>
+              <Styled.ProjectLabel>Excel Validator</Styled.ProjectLabel>
             </Styled.ProjectMainLink>
             <Styled.ProjectRight>
               <Styled.GithubButton
