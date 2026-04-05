@@ -33,16 +33,18 @@ export const ProjectsGrid = styled.ul`
   margin: 24px 0 0;
   padding: 0;
   display: grid;
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
 `;
 
 export const ProjectLink = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px 18px;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+  min-height: 260px;
+  padding: 18px;
   border-radius: 18px;
   text-decoration: none;
   color: var(--text-h);
@@ -86,7 +88,7 @@ export const ProjectMainLink = styled.a`
   align-items: center;
   gap: 10px;
   min-width: 0;
-  flex: 1;
+  max-width: calc(100% - 52px);
   color: var(--text-h);
   text-decoration: none;
   font-weight: 600;
@@ -104,7 +106,16 @@ export const ProjectRight = styled.div`
   gap: 10px;
 `;
 
+export const ProjectTop = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 82px;
+`;
+
 export const ProjectCard = styled.li`
+  display: flex;
   border-radius: 18px;
 
   &:nth-child(1) ${ProjectLink} {
@@ -197,5 +208,15 @@ export const GithubIcon = styled.svg`
 `;
 
 export const ProjectLabel = styled.span`
+  font-size: 1.9rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   font-weight: 600;
+`;
+
+export const ProjectDescription = styled.p`
+  margin: 0;
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  line-height: 1.35;
+  color: color-mix(in oklab, var(--text) 82%, #6ee7c8 18%);
 `;
