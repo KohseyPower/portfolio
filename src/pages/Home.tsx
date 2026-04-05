@@ -78,8 +78,8 @@ export default function Home() {
       </Styled.SocialLinks>
       <Styled.Subtitle>Languages and Tools</Styled.Subtitle>
       <Styled.ToolsText>
-        CSS · Django · Docker · .NET · Git · HTML · JavaScript · Linux · Python
-        · React · TypeScript · SPFx
+        HTML · CSS · JavaScript · TypeScript · Python · React · Python · Django
+        · SPFx · Git · Docker · Linux · Visual Studio Code
       </Styled.ToolsText>
     </Styled.Section>
   );
