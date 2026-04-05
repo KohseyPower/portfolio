@@ -4,6 +4,11 @@
   --text: #35556a;
   --text-h: #082335;
   --bg: #d8f0f7;
+  --selection-bg: rgba(35, 130, 174, 0.32);
+  --selection-text: #04131f;
+  --scrollbar-thumb: #77d1b1;
+  --scrollbar-thumb-hover: #8cddc0;
+  --scrollbar-track: #1f273a;
   --sans: "Sora", "Segoe UI", sans-serif;
   --heading: "Space Grotesk", "Segoe UI", sans-serif;
 }
@@ -13,6 +18,11 @@
     --text: #a9c4d4;
     --text-h: #e7f5ff;
     --bg: #071018;
+    --selection-bg: rgba(81, 180, 247, 0.34);
+    --selection-text: #f3fbff;
+    --scrollbar-thumb: #77d1b1;
+    --scrollbar-thumb-hover: #8cddc0;
+    --scrollbar-track: #1f273a;
   }
 }
 
@@ -47,6 +57,47 @@ body {
     linear-gradient(125deg, #cae9f3 0%, #d6f1f4 48%, #d2eff2 100%);
 }
 
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border: none;
+  border-radius: 0;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background:
@@ -68,8 +119,4 @@ h1,
 h2 {
   font-family: var(--heading);
   color: var(--text-h);
-}
-
-p {
-  margin: 0;
 }
