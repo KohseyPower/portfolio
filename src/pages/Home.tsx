@@ -16,14 +16,21 @@ export default function Home() {
         developing the product, and setting up efficient production and CI
         processes.
       </Styled.Paragraph>
-      <Styled.Paragraph>
-        📫 How to reach me:{" "}
-        <Styled.ContactLink href="mailto:kohsey.dufour@gmail.com">
-          kohsey.dufour@gmail.com
-        </Styled.ContactLink>
-      </Styled.Paragraph>
       <Styled.Subtitle>Connect with me</Styled.Subtitle>
       <Styled.SocialLinks>
+        <Styled.ContactLink href="mailto:kohsey.dufour@gmail.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            style={{ marginRight: "8px" }}
+          >
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.5-8 5-8-5V6l8 5 8-5v2.5z" />
+          </svg>
+          Mail
+        </Styled.ContactLink>
         <Styled.ContactLink
           href="https://www.linkedin.com/in/kohsey-dufour/"
           target="_blank"
