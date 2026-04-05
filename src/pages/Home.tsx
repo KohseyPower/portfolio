@@ -42,6 +42,23 @@ export default function Home() {
           LinkedIn
         </Styled.ContactLink>
         <Styled.ContactLink
+          href="https://github.com/KohseyPower"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            style={{ marginRight: "8px" }}
+          >
+            <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56 0-.27-.01-1.18-.02-2.14-3.2.7-3.88-1.38-3.88-1.38-.52-1.35-1.28-1.71-1.28-1.71-1.05-.72.08-.7.08-.7 1.16.09 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.35.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.29-5.23-5.72 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.5.11-3.13 0 0 .97-.31 3.17 1.19a10.9 10.9 0 0 1 5.78 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.63.23 2.83.11 3.13.74.81 1.19 1.84 1.19 3.1 0 4.44-2.68 5.43-5.24 5.71.41.36.77 1.07.77 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.79.56A11.54 11.54 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5z" />
+          </svg>
+          GitHub
+        </Styled.ContactLink>
+        <Styled.ContactLink
           href="https://x.com/Kohsey_Power"
           target="_blank"
           rel="noreferrer"
