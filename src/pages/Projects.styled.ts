@@ -160,6 +160,37 @@ export const GithubButton = styled.a`
   }
 `;
 
+export const DisabledGithubButtonWraper = styled.div`
+  cursor: no-drop;
+  display: inline-block;
+`;
+
+export const DisabledGithubButton = styled(GithubButton)`
+  pointer-events: auto;
+  cursor: not-allowed;
+  background-color: #442020;
+
+  &:active {
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    content: "Private repository - Access restricted";
+    position: absolute;
+    bottom: 100%;
+    left: -20%;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #555;
+  }
+`;
+
 export const GithubIcon = styled.svg`
   width: 18px;
   height: 18px;
