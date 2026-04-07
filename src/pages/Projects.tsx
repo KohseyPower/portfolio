@@ -40,13 +40,9 @@ export default function Projects() {
       <Styled.ProjectsGrid>
         {projects.map((project) => (
           <Styled.ProjectCard key={project.name}>
-            <Styled.ProjectLink>
+            <Styled.ProjectLink href={project.appHref} rel="noreferrer">
               <Styled.ProjectTop>
-                <Styled.ProjectMainLink
-                  href={project.appHref}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Styled.ProjectMainLink href={project.appHref} rel="noreferrer">
                   <Styled.ProjectLabel>{project.name}</Styled.ProjectLabel>
                 </Styled.ProjectMainLink>
                 <Styled.ProjectRight>

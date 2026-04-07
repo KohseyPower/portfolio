@@ -37,7 +37,7 @@ export const ProjectsGrid = styled.ul`
   gap: 16px;
 `;
 
-export const ProjectLink = styled.div`
+export const ProjectLink = styled.a`
   position: relative;
   display: flex;
   flex-direction: column;
