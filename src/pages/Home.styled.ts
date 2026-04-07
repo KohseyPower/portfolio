@@ -1,31 +1,20 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: relative;
+  width: min(920px, 100%);
   margin: 18px auto 0;
   padding: clamp(20px, 4vw, 44px);
-  width: min(920px, 100%);
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.38);
   background: linear-gradient(
-    130deg,
+    120deg,
     rgba(255, 255, 255, 0.29),
-    rgba(255, 255, 255, 0.1)
+    rgba(255, 255, 255, 0.11)
   );
-  box-shadow: 0 28px 42px -34px rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(18px) saturate(145%);
-  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  box-shadow: 0 26px 40px -34px rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
   text-align: left;
-
-  @media (prefers-color-scheme: dark) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: linear-gradient(
-      130deg,
-      rgba(20, 29, 40, 0.58),
-      rgba(10, 17, 28, 0.4)
-    );
-    box-shadow: 0 26px 36px -30px rgba(0, 0, 0, 0.85);
-  }
 `;
 
 export const Title = styled.h1`
