@@ -6,6 +6,7 @@ export default function Navbar() {
       <Styled.NavList>
         <Styled.NavItem to="/">Home</Styled.NavItem>
         <Styled.NavItem to="/projects">Projects</Styled.NavItem>
+        <Styled.NavItem to="/tools">Tools</Styled.NavItem>
       </Styled.NavList>
     </Styled.Nav>
   );
