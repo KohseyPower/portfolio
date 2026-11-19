@@ -3,12 +3,12 @@ import * as Styled from "./Tools.styled.ts";
 const tools = [
   {
     name: "BentoPDF",
-    href: "/app/bentopdf",
+    href: "https://bentopdf.kohsey.ovh",
     description: "A tool for PDF conversion.",
   },
   {
     name: "Vertsh",
-    href: "/app/vertsh",
+    href: "https://vert.kohsey.ovh",
     description: "A file conversion tool.",
   },
 ] as const;
